@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "frontend": "ng serve --proxy-config proxy.conf.json",
+    "backend": "node app.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,8 +21,15 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^3.1.0",
+    "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
+    "cors": "2.8.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "rxjs": "^6.0.0",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

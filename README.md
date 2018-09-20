@@ -1,27 +1,66 @@
-# SombraAngularTest
+# Works details
+- Download ZIP repository
+- Complete all Technical information
+- Push completed test to your own github or any other repository hosting service
+- Send link to us link with test (please make sure that this repository is public)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+# Dependencies
 
-## Development server
+- sqlite3
+- node
+- npm
+- Angular
+- Bootstrap
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+###### Install npm dependencies
+`npm install`
 
-## Build
+###### Run the frontend
+`npm run frontend`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+###### Run the backend server
+`npm run backend`
 
-## Running unit tests
+###### Viewing the application in your browser
+`http://localhost:4200`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Technical information
+You should implement next features:
+- Create navigation between main pages of application, which already exist in navbar
+- Create functionality to getAll, edit, delete and view particular item, and populate these information about customers and products on those pages
+- All additional (unit test, e2e test and etc.) work are greetings 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# API information
 
-## Further help
+## Customers
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- id (integer)
+- name (string)
+- address (string)
+- phone (string)
+
+
+## Products
+
+- id (integer)
+- name (string)
+- price (decimal)
+
+
+# Resources
+
+## Customers
+```
+GET|POST          /api/customers
+GET|PUT|DELETE    /api/customers/{id}
+```
+
+## Products
+```
+GET|POST          /api/products
+GET|PUT|DELETE    /api/products/{id}
+```

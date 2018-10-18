@@ -1,0 +1,11 @@
+.home {
+    margin: 3% auto;
+    background-image: url('../images/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home h1 {
+    padding: 150px 0;
+    text-align: center;
+}

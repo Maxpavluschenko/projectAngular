@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Sombra test</a>
+  <a class="navbar-brand" routerLink="/home">Sombra test</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,12 +7,11 @@
 
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a routerLink="products" class="nav-link" href="#">Products</a></li>
-      <li class="nav-item"><a routerLink="customers" class="nav-link" href="#">Customers</a></li>
+      <li class="nav-item"><a routerLink="/products" class="nav-link">Products</a></li>
+      <li class="nav-item"><a routerLink="/customers" class="nav-link">Customers</a></li>
     </ul>
   </div>
 </nav>
-
 <div class="container">
   <router-outlet></router-outlet>
 </div>

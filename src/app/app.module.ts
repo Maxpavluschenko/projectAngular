@@ -12,7 +12,6 @@ const routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'products', component: ProductsPageComponent },
   { path: 'customers', component: CustomersPageComponent }
-  // { path: '', redirectTo: '/products', pathMatch: 'full' }
 ];
 
 @NgModule({
